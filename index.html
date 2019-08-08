@@ -8,6 +8,15 @@
     <script src="https://kit.fontawesome.com/680f28b72a.js"></script>
 
     <title>MyPetStore</title>
+
+    <script>
+    function checkForBlank(){
+        if (document.getElementById("userInput").value == ""){
+        alert("Please enter the Postalcode to search.."); 
+        return false;
+        }
+    }
+    </script>
    
 </head>
 <body style="background:light grey">
@@ -15,10 +24,10 @@
         <h1 class="text-center mb-3" style="font-family: Comic Sans MS;margin-top:2rem">Welcome to   <span <i class="fas fa-dog"></i></span> MyPetStore</h1>
 
         
-            <form action="/getBestShipmentRate" method="POST">
+            <form action="/getBestShipmentRate" onsubmit="return checkForBlank()"  method="POST">
                 <div class="form-group">
                     <label for="postcode" style="margin-top:3rem;font-family: Comic Sans MS" >Enter the postal code</label>
-                    <input type="text" class="form-control" name = "postcode">
+                    <input id = "userInput" type="text" class="form-control" name = "postcode">
                 </div>
                     <input type="submit" class="btn btn-block btn-primary" style="margin-top:2rem;font-family: Comic Sans MS" value = "search">
                 </div>
