@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/680f28b72a.js"></script>
+
+
+    <title>Search Result</title>
+</head>
+<body style="background:light grey">
+        <div class="container mt-4">
+                <h1 class="text-center mb-3" style="font-family: Comic Sans MS;margin-top:2rem">The Best<span <i class="fas fa-truck"></i></span> Shipment Rate</h1>
+
+                <table class="table table-hover" style="margin-top:5rem">
+
+
+                    <tbody>
+                        <tr>
+                            <th scope="row">Id</th>
+                            <td scope="row"><%= choice.id %></td>
+                        </tr>
+
+                        <tr>
+                                <th scope="row">Description</th>
+                                <td scope="row"><%= choice.description %></td>
+                        </tr>
+
+                        <tr>
+                                <th scope="row">Price</th>
+                                <td scope="row"><%= choice.price %></td>
+                        </tr>
+
+                        <tr>
+                                <th scope="row">Estimate_Days</th>
+                                <td scope="row"><%= choice.estimate_days %></td>
+                        </tr>
+                    </tbody>
+                
+                </table>       
+                
+                <a class="btn btn-primary btn-block" style="margin-top:2rem;font-family: Comic Sans MS" href="http://localhost:3000/" role="button">Search Again </a>
+            
+        </div>
+
+ 
+    
+</body>
+</html>
